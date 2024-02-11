@@ -1,0 +1,135 @@
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  padding: 0;
+  margin: 0
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--wenge-brown);
+  font-size: 14px;
+}
+
+/* Utilities */
+.container {
+  max-width: 1600px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.card {
+  background-color: var(--rose-white);
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.heading-primary {
+  color: #000;
+  font-family: 'Young Serif', serif;
+  font-size: 35px;
+}
+
+.heading-secondary {
+  font-family: 'Young Serif', serif;
+  font-size: 23px;
+  color: var(--nutmeg);
+  font-weight: 400;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--light-grey)
+}
+
+.recipe-container {
+  background-color: var(--eggshell);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 800px;
+  background-color: var(--white);
+  padding: 50px 0;
+  margin: 80px 0;
+  border-radius: 15px;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-heading {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark-raspberry);
+}
+
+.list {
+  font-size: 14px;
+  padding: 0px 25px;
+}
+
+.list li {
+  padding-left: 15px;
+  margin: 15px 0;
+}
+
+.list li::marker {
+  color: var(--dark-raspberry);
+  font-weight: bold;
+}
+
+span.strong {
+  font-weight: 800;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  text-align: left;
+}
+
+.grid-container .grid-item {
+  border-bottom: 1px solid var(--light-grey);
+  padding: 10px 15px;
+}
+
+.grid-container>*:nth-last-child(-n+2) {
+  border-bottom: none;
+
+}
+
+.grid-container>*:nth-child(even) {
+  color: var(--dark-raspberry);
+  font-weight: bold;
+}
